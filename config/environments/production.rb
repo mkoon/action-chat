@@ -83,4 +83,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  # Specify who can subscribe to the channels
+  config.action_cable.allowed_request_origins = ['https://action-chat.herokuapp.com', 'http://action-chat.herokuapp.com']
+  
+  # Specify ActionCable URL
+  config.action_cable.url = "wss://action-chat.herokuapp.com/cable"
 end
