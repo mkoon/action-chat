@@ -27,6 +27,8 @@ gem 'devise'
 # Use Bootstrap for styling
 gem 'bootstrap', '~> 4.0.0.alpha3'
 
+gem 'delayed_job_active_record'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '>= 1.3.12'
